@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarboDog</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Logos/logo black outline.png" alt="Logo" class="logo">
+            <span class="logo-text">GarboDog</span>
+        </div>
+        <div class="nav-buttons">
+            <a href="#" class="nav-button">Home</a>
+            <a href="#" class="nav-button">Gallery</a>
+            <a href="#" class="nav-button">YCH</a>
+            <a href="#" class="nav-button">Commission</a>
+            <a href="#" class="nav-button">About</a>
+        </div>
+    </nav>
+    <div class="paint-container">
+        <div class="toolbar">
+            <button class="tool-button active" id="pen-button"><img src="Icons/Pencil.png"></button>
+            <button class="tool-button" id="eraser-button"><img src="Icons/Eraser.png"></button>
+            <button class="tool-button" id="fill-button"><img src="Icons/Fill.png"></button>
+            <div class="current-color" id="current-color"></div>
+            <div class="color-picker">
+                <div>
+                    <button class="color-button" style="background-color: #000000;"></button>
+                    <button class="color-button" style="background-color: #ff0000;"></button>
+                    <button class="color-button" style="background-color: #ff7615;"></button>
+                    <button class="color-button" style="background-color: #12da03;"></button>
+                    <button class="color-button" style="background-color: #39c5f8;"></button>
+                    <button class="color-button" style="background-color: #f588d4;"></button>
+
+
+                </div>
+                <div>
+                    <button class="color-button" style="background-color: #9a9a9a;"></button>
+                    <button class="color-button" style="background-color: #912e2e;"></button>
+                    <button class="color-button" style="background-color: #ffe66c;"></button>
+                    <button class="color-button" style="background-color: #14700d;"></button>
+                    <button class="color-button" style="background-color: #300cd2;"></button>
+                    <button class="color-button" style="background-color: #af20c8;"></button>
+                </div>
+            </div>
+        </div>
+        <canvas id="paint-canvas" width="650" height="400"></canvas>
+        <div>
+            <button id="download-button" class="tool-button"><img src="Icons/Save.png" style="width: 35px;"></button>
+            <button id="undo-button" class="tool-button"><img src="Icons/Undo.png" style="width: 35px;"></button>
+            <button id="redo-button" class="tool-button"><img src="Icons/Redo.png" style="width: 35px;"></button>
+            <button id="clear-button" class="tool-button"><img src="Icons/clear.png" style="width: 35px;"></button>
+        </div>
+    </div>
+    <script src="paint.js"></script>
+</body>
+</html>
