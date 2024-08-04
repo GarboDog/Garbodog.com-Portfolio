@@ -236,9 +236,9 @@ function drawBlackOutlines(base64Data) {
 
 // List of image URLs
 const imageUrls = [
-    'YCHs/HomePage paint program/Preset 1.png',
-    'YCHs/HomePage paint program/Preset 2.png',
-    'YCHs/HomePage paint program/Preset 3.png',
+    'HomePage paint program/Preset 1.png',
+    'HomePage paint program/Preset 2.png',
+    'HomePage paint program/Preset 3.png',
     // Add more URLs as needed
 ];
 
