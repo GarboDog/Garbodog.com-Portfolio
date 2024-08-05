@@ -235,16 +235,16 @@ function drawBlackOutlines(base64Data) {
 }
 
 // List of image URLs
-const imageUrls = [
-    'HomePage paint program/Preset 1.png',
-    'HomePage paint program/Preset 2.png',
-    'HomePage paint program/Preset 3.png',
+const defaultYCHs = [
+    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93ffc78b-bdea-456a-a032-384a4ba2728c/dhwpnnm-905b1798-e58e-47d8-a50d-be33e9e47d40.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkzZmZjNzhiLWJkZWEtNDU2YS1hMDMyLTM4NGE0YmEyNzI4Y1wvZGh3cG5ubS05MDViMTc5OC1lNThlLTQ3ZDgtYTUwZC1iZTMzZTllNDdkNDAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.i7K2oc6r1u95sY8aQp2Ms-jCl_qwL8UW4x7cNakMPZI',
+    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93ffc78b-bdea-456a-a032-384a4ba2728c/dhwpqzo-a4c9f82f-281b-41ff-b866-3b81a50685ae.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkzZmZjNzhiLWJkZWEtNDU2YS1hMDMyLTM4NGE0YmEyNzI4Y1wvZGh3cHF6by1hNGM5ZjgyZi0yODFiLTQxZmYtYjg2Ni0zYjgxYTUwNjg1YWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EDBVsx5VHtgkDIGJ1_-vwyjrFSIlJInQez9zepe0GFg',
+    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93ffc78b-bdea-456a-a032-384a4ba2728c/dhwpxwh-d79bf569-924f-4555-ad19-44fbbdad9191.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkzZmZjNzhiLWJkZWEtNDU2YS1hMDMyLTM4NGE0YmEyNzI4Y1wvZGh3cHh3aC1kNzliZjU2OS05MjRmLTQ1NTUtYWQxOS00NGZiYmRhZDkxOTEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PqoTlN3LXsaaEmIKrYRbW9iw1Gz2gm8GXBrXXj6a3v0',
     // Add more URLs as needed
 ];
 
 // Function to select a random image, convert to Base64, and draw black outlines
 function processRandomImage() {
-    const randomUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+    const randomUrl = defaultYCHs[Math.floor(Math.random() * defaultYCHs.length)];
     convertImageToBase64(randomUrl, function(base64Data) {
         if (base64Data) {
             drawBlackOutlines(base64Data);
