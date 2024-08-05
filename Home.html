@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GarboDog</title>
+    <link rel="icon" href="Logos/logo black outline.png" type="image/png">
     <link rel="stylesheet" href="StyleSheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
 </head>
@@ -16,11 +17,12 @@
         <div class="nav-buttons">
             <a href="Home.html" class="nav-button">Home</a>
             <a href="Gallery.html" class="nav-button">Gallery</a>
-            <a href="#" class="nav-button">YCH</a>
-            <a href="#" class="nav-button">Commission</a>
-            <a href="#" class="nav-button">About</a>
+            <a href="https://trello.com/b/Q5sG55CE/commissions" target="_blank" class="nav-button">Trello</a>
+            <a href="Projects.html" class="nav-button">Projects</a>
+            <a href="About.html" class="nav-button">About</a>
         </div>
     </nav>
+
     <div class="paint-container">
         <div class="toolbar">
             <button class="tool-button active" id="pen-button"><img src="Icons/Pencil.png"></button>
@@ -35,8 +37,6 @@
                     <button class="color-button" style="background-color: #12da03;"></button>
                     <button class="color-button" style="background-color: #39c5f8;"></button>
                     <button class="color-button" style="background-color: #f588d4;"></button>
-
-
                 </div>
                 <div>
                     <button class="color-button" style="background-color: #9a9a9a;"></button>
@@ -56,6 +56,51 @@
             <button id="clear-button" class="tool-button"><img src="Icons/clear.png" style="width: 35px;"></button>
         </div>
     </div>
+
+    <div class="two-column-layout">
+        <div class="text-column">
+            <h2>Garbodog</h2>
+            <p>
+                Girl with head filled with funny
+            </p>
+            <p>
+                Primary focused on making comics, assets for websites, videos for Youtube, and stickers/YCHs for sale!
+            </p>
+            <p>
+                Contact via the <a href="Commission.html">Commission Page</a> or on the <a href="https://discord.gg/qgqZWNaSbX" target="_blank">Discord Server</a> to commissioning or work together on a project!
+            </p>
+            <p>
+                Looking to collaborate with other streamers to make assets for their OBS/profile, concpet art for video games, video editing for youtube and other creative projects.
+            </p>
+        </div>
+        <div class="image-column">
+            <img src="Gallery Imgs/HB Garbodog.png" alt="About Us" style="width: 100%; max-width: 400px;">
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">
+        Featured
+    </h2>
+    <div id="carousel6" class="carousel-container">
+        <div class="carousel">
+            <button class="carousel-button left">◄</button>
+            <img class="carousel-image" src="">
+            <button class="carousel-button right">►</button>
+        </div>
+        <img class="carousel-side-image previous" src="">
+        <img class="carousel-side-image next" src="">
+    </div>
+    <h3 style="text-align: center;">
+        <a href="Gallery.html">More Example Work</a>
+    </h3>
+
+    <footer class="footer">
+        <p>Made with 🩷</p>
+        <p>&copy; Garbodog.com @2024</p>
+        <a href="https://bsky.app/profile/garbodog.com" target="_blank">BlueSky</a> | <a href="https://www.deviantart.com/garbodog" target="_blank">DeviantArt</a> | <a href="https://discord.gg/qgqZWNaSbX" target="_blank">Discord</a>
+    </footer>
+
     <script src="paint.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
