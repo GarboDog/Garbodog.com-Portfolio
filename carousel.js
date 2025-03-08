@@ -88,6 +88,17 @@ const carousel6Images = [
     'Gallery Imgs/Sk Aaliyah Spoopy.gif'
 ];
 
+const carousel7Images = [
+    'Gallery Imgs/Ych Pride Flag Run Floofers the Fox.jpg',
+    'Gallery Imgs/Ych Pride Flag Run Tee the Clown.jpg',
+    'Gallery Imgs/Ych Pride Flag Run Garbodog.jpg',
+    'Gallery Imgs/Ych Pride Flag Run Darmill.jpg'
+];
+
+const carousel8Images = [
+    'Gallery Imgs/Ych April Fools Bucket.png'
+];
+
 document.addEventListener('DOMContentLoaded', () => {
     const carousels = [
         { id: 'carousel1', images: carousel1Images },
@@ -95,7 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'carousel3', images: carousel3Images },
         { id: 'carousel4', images: carousel4Images },
         { id: 'carousel5', images: carousel5Images },
-        { id: 'carousel6', images: carousel6Images }
+        { id: 'carousel6', images: carousel6Images },
+        { id: 'carousel7', images: carousel7Images },
+        { id: 'carousel8', images: carousel8Images }
     ];
 
     carousels.forEach(({ id, images }) => {
